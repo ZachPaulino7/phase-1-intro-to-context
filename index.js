@@ -13,7 +13,7 @@ const createEmployeeRecords = (recordsArray) => {
     return recordsArray.map(rec => createEmployeeRecord(rec))
 }
 
-const createTimeInEvent = function (dateStamp) {
+const createTimeInEvent = function (createEmployeeRecords, dateStamp) {
     const [date, hour] = dateStamp.toString().split(` `)
     //const arrFromDate = dateStamp.toString().split(' ');
     //const date = arrFromDate[0]
